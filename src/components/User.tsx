@@ -12,13 +12,11 @@ const User = ({
   return (
     <div className="flex flex-col items-center justify-center gap-2 text-lg">
       <p>ID do usuário {id}</p>
-      <img src={avatar_url} alt={login} className="rounded-md" />
+      <img src={avatar_url} alt={login} className="rounded-lg" />
       <h2>Nome do usuário: {login}</h2>
 
       {location && (
-        <div className="flex">
-          <MdLocationPin />: {location}
-        </div>
+        <div className="flex"><MdLocationPin />: {location}</div>
       )}
 
       <div>
