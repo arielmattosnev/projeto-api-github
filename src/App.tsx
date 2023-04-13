@@ -1,11 +1,13 @@
+import { Outlet } from "react-router-dom";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="text-white">
-      <h1>Hello world!</h1>
+    <div className="text-white p-8">
+      <h1 className="text-3xl">Projeto Github</h1>
+      <Outlet />
     </div>
   );
-}
+};
 
 export default App;
