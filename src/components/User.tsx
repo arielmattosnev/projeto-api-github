@@ -26,12 +26,14 @@ const User = ({
         </p>
       )}
 
-      <div>
-        <p>Seguidores: {followers}</p>
-      </div>
+      <div className="flex gap-4">
+        <div>
+          <p>Seguidores: {followers}</p>
+        </div>
 
-      <div>
-        <p>Seguindo: {following}</p>
+        <div>
+          <p>Seguindo: {following}</p>
+        </div>
       </div>
     </div>
   );
